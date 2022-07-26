@@ -1,0 +1,164 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo:#00030c;
+    --fonte-principal: "Inter"; /*variavel de fonte*/
+}
+/*variáveis css*/
+/* função que chama a variável*/
+*{
+    margin: 0%;     /* "*" abrange todos os elementos do html*/
+    padding: 0%;
+}
+body{
+    background-color: var(--cor-de-fundo);  /*alterando a cor de todo o background da página*/
+    color: var(--branco-principal);  /*alterando a cor de todos os textos do body*/
+    font-size: 16px; /*tamanho da fonte*/
+    font-weight: 400;
+   
+    
+ 
+
+}
+
+    
+.principal{
+     background-image:url(img/Background.png) ;   /*imagem de background*/
+     background-repeat: no-repeat; /*cancelando a repetição de imagem*/
+     background-size:contain; /* expecifica o tamanho da imagem de fundo*/
+     align-items: center;/*centraliza os itens*/
+     text-align:center; /*não alinha somente os textos mas todos os elementos em um bloco de texto*/
+}
+    
+.container{
+    height:100vh; /*depois e identificar o tamanho da tela do usuário, ele vai preeencher 100% do espaço*/  
+    grid-template-columns:50% 50%; /*alterando a organização padrão do grid para colunas*/
+    display: grid; /*por padrão organiza os elementos em linhas*/
+    font-family: var(--fonte-principal);
+   } 
+  
+
+.container__botao{
+    background-color: var(--botao-azul); /*cor de fundo do botão*/
+    color: var(--branco-principal); /*cor do texto do botão*/
+    border-radius: 5px; /*bordas*/
+    padding: 1em; /*espaçamento interno*/
+    display: block; /*espaço que ele ocupa na tela*/
+    text-decoration: none; /*retirando a decoração do texto*/
+    margin-bottom: 1em;
+    font-family: var(--fonte-principal);
+}
+.botao_secundario{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #FFFFFF;
+    margin-bottom: 1em;
+    font-family: var(--fonte-principal);
+}
+.container__aviso{
+    font-size: 12px;
+    color: var(--fonte-principal);
+    font-family: var(--fonte-principal);
+    margin-top: 1em;
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    margin-bottom: 0.1em;
+}
+.container__img{
+    margin: 1em 0 2em 0; /*o espaçamento funciona no sentido horario*/
+
+}
+.container__caixa{
+   margin: 0 6em;/*0 representa cima baixo, e 16 esquerda direita*/
+
+}
+.secundario_imagem{
+  width: 80%;
+
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+
+}
+.descricao__texto {
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+.secundario__botao{
+   align-items: center;
+   display: inline-block; /*preenche somente o espaço dele*/
+   font-family: var(--fonte-principal);
+
+
+}
+
+
+
+.dispositivos__lista{
+    display: flex; /*colocando cada item um do lado do outro*/
+    justify-content: center; /*justificar conteudo para posiciona-lo*/
+    font-family: var(--fonte-principal);
+    text-align: center;
+    list-style-type: none;
+    margin: 5em 0;
+   
+}
+.dispositivos__titulos{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 40px;
+}
+
+.rodape{
+   display:block;
+   text-align: center;
+}
+.rodape__lista{
+    display: flex;
+     margin: 1em 0;
+    align-items: center;
+    list-style-type:none;
+    justify-content: center;
+   
+}
+.lista__link a{
+   margin: 0 1em;
+   font-family: var(--fonte-principal);
+   color: var(--branco-principal);
+   text-decoration: none;
+}
+.lista__link a:hover{ /*pseudoclasse que identifica o comportamento do usuario*/
+    color: #167bf7;
+}
+
+
+.texto__rodape{
+   color: var(--cinza-secundario);
+   margin: 2em 0 2em 0;
+   font-size: 20px;
+
+}
+
+.rodape_logo{
+  margin: 1em 0;
+
+}
+
+.lista__link a :hover{
+    color: var(--botao-azul);
+}
+
+
+
+
+
